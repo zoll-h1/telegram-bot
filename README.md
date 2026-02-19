@@ -58,6 +58,23 @@ cp .env.example .env
 python main.py
 ```
 
+## Deploy To Railway
+
+1. Push this repo to GitHub.
+2. In Railway, create a new project from this repo.
+3. Keep service as a worker/background service (no HTTP port needed).
+4. Add environment variables in Railway:
+   - `BOT_TOKEN`
+   - `DATABASE_URL` (use Railway Postgres URL for persistent data)
+   - `LOG_LEVEL`
+   - `REMINDER_POLL_SECONDS`
+5. Deploy.
+
+This repository includes:
+
+- `railway.json` with `startCommand: python main.py`
+- `Procfile` with `worker: python main.py`
+
 ## Commands
 
 - `/start` open menu
