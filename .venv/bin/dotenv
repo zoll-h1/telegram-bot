@@ -1,4 +1,4 @@
-#!/home/snow-king/Documents/tg-bot/.venv/bin/python
+#!/data/Downloads/tg-bot/.venv/bin/python3
 import sys
 from dotenv.__main__ import cli
 if __name__ == '__main__':
